@@ -1,31 +1,53 @@
 .l5r5e_container > * {
-  display:flex;
-  flex-flow: column-wrap;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   color: white;
+  font-size: 1.4em;
+  font-style: italic;
 }
 
-.l5r5e_container  .l5r5e_avatar, .dsf_avatar_image {
+.l5r5e_container .l5r5e_avatar,
+.dsf_avatar_image {
+  background-color: black;
+  border: 2px solid purple;
+  border-radius: 4%;
+  margin: 10px;
   width: 300px;
   height: 300px;
 }
 
 .l5r5e_container {
+  display: flex;
+  flex-direction: column;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
   background-color: hsl(240, 50%, 14%);
   border-radius: 1%;
 }
 
+.l5r5e_narrative_top {
+  display: flex;
+  flex-direction: row-wrap;
+}
 
-.l5r5e_container .l5r5e_narrative_page, .l5r5e_container .l5r5e_conflict_page {
+.l5r5e_skills {
+  display: flex;
+  flex-flow: row-wrap;
+}
+
+.l5r5e_skill_title {
+  font-style: normal;
+}
+
+.l5r5e_container .l5r5e_narrative_page,
+.l5r5e_container .l5r5e_conflict_page {
   position: relative;
   top: 10px;
-  background-color: hsla(0, 0%, 17%, 0.30);
+  background-color: hsla(0, 0%, 17%, 0.3);
   backdrop-filter: blur(4px);
   border: 1px solid white;
   border-radius: 1%;
   padding: 20px;
-  
 }
 
 .l5r5e_container .dsf {
@@ -34,9 +56,9 @@
   width: 5em;
   height: 1rem;
   border-radius: 5%;
+  font-style: normal;
 }
 
 .l5r5e_container .dsf:hover {
   background-color: blue;
 }
-

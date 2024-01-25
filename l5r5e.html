@@ -1,43 +1,52 @@
 <link rel="stylesheet" href="./l5r5e.css" />
 <div class="l5r5e_container">
   <section class="l5r5e_narrative_page">
-    <div class="l5r5e_basic_info">
-      <div class="l5r5e_avatar"><span class="dsf dsf_avatar_image"></span></div>
-      <div>Name: <span class="dsf dsf_name"></span></div>
-      <div>Player: <span class="dsf dsf_player"></span></div>
-      <div>Campaign: <span class="dsf dsf_campaign"></span></div>
-      <div>Clan: <span class="dsf dsf_clan"></span></div>
-      <div>Family: <span class="dsf dsf_family"></span></div>
-      <div>
-        School: <span class="dsf dsf_school"></span>
-        <span class="dsf dsf_school_rank" aria-placeholder="rank"></span>
+    <div class="l5r5e_narrative_top">
+      <div class="l5r5e_avatar">
+        <span class="dsf dsf_avatar_image"></span>
       </div>
-      <div>Roles: <span class="dsf dsf_roles"></span></div>
+      <div class="l5r5e_basic_info">
+        <div>Name: <span class="dsf dsf_name"></span></div>
+        <div>Player: <span class="dsf dsf_player"></span></div>
+        <div>Campaign: <span class="dsf dsf_campaign"></span></div>
+        <div>Clan: <span class="dsf dsf_clan"></span></div>
+        <div>Family: <span class="dsf dsf_family"></span></div>
+        <div>
+          School: <span class="dsf dsf_school"></span>
+          <span class="dsf dsf_school_rank" aria-placeholder="rank"></span>
+        </div>
+        <div>Roles: <span class="dsf dsf_roles"></span></div>
+      </div>
+      <div class="l5r5e_rings">
+        <div>Earth 🪨 <span class="dsf dsf_earth"></span></div>
+        <div>Air 🍃 <span class="dsf dsf_air"></span></div>
+        <div>Water 🌊 <span class="dsf dsf_water"></span></div>
+        <div>Fire 🔥 <span class="dsf dsf_fire"></span></div>
+        <div>Void ☯️ <span class="dsf dsf_void"></span></div>
+      </div>
+      <div class="l5r5e_society">
+        <div>Honor: <span class="dsf dsf_honor"></span></div>
+        <div>Glory: <span class="dsf dsf_glory"></span></div>
+        <div>Status: <span class="dsf dsf_status"></span></div>
+        <div class="l5r5e_ninjo">
+          Ninjo: <span class="dsf dsf_ninjo"></span>
+        </div>
+        <div class="l5r5e_giri">Giri: <span class="dsf dsf_giri"></span></div>
+        <div class="l5r5e_titles">
+          Titles: <span class="dsf dsf_titles"></span>
+        </div>
+      </div>
     </div>
-    <div class="l5r5e_rings">
-      <div>Earth 🪨 <span class="dsf dsf_earth"></span></div>
-      <div>Air 🍃 <span class="dsf dsf_air"></span></div>
-      <div>Water 🌊 <span class="dsf dsf_water"></span></div>
-      <div>Fire 🔥 <span class="dsf dsf_fire"></span></div>
-      <div>Void ☯️ <span class="dsf dsf_void"></span></div>
-    </div>
-    <div class="l5r5e_society"></div>
-    <div>Honor: <span class="dsf dsf_honor"></span></div>
-    <div>Glory: <span class="dsf dsf_glory"></span></div>
-    <div>Status: <span class="dsf dsf_status"></span></div>
-    <div class="l5r5e_ninjo">Ninjo: <span class="dsf dsf_ninjo"></span></div>
-    <div class="l5r5e_giri">Giri: <span class="dsf dsf_giri"></span></div>
-    <div class="l5r5e_titles">Titles: <span class="dsf dsf_titles"></span></div>
     <div class="l5r5e_skills">
       <div class="l5r5e_artisan">
-        Artisan Skills
+        <p class="l5r5e_skill_title">Artisan Skills</p>
         <p>Aesthetics: <span class="dsf dsf_aesthetics"></span></p>
         <p>Composition: <span class="dsf dsf_composition"></span></p>
         <p>Design: <span class="dsf dsf_design"></span></p>
         <p>Smithing: <span class="dsf dsf_smithing"></span></p>
       </div>
       <div class="l5r5e_martial">
-        Martial Skills
+        <p class="l5r5e_skill_title">Martial Skills</p>
         <p>Fitness: <span class="dsf dsf_fitness"></span></p>
         <p>Martial Arts Melee: <span class="dsf dsf_melee"></span></p>
         <p>Martial Arts Ranged: <span class="dsf dsf_ranged"></span></p>
@@ -46,7 +55,7 @@
         <p>Tactics: <span class="dsf dsf_tactics"></span></p>
       </div>
       <div class="l5r5e_scholar">
-        Scholar Skills
+        <p class="l5r5e_skill_title">Scholar Skills</p>
         <p>Culture: <span class="dsf dsf_culture"></span></p>
         <p>Government: <span class="dsf dsf_government"></span></p>
         <p>Medicine: <span class="dsf dsf_medicine"></span></p>
@@ -54,14 +63,14 @@
         <p>Theology: <span class="dsf dsf_theology"></span></p>
       </div>
       <div class="l5r5e_social">
-        Social Skills
+        <p class="l5r5e_skill_title">Social Skills</p>
         <p>Command: <span class="dsf dsf_command"></span></p>
         <p>Courtesy: <span class="dsf dsf_courtesy"></span></p>
         <p>Games: <span class="dsf dsf_games"></span></p>
         <p>Performance: <span class="dsf dsf_performance"></span></p>
       </div>
       <div class="l5r5e_trade">
-        Trade Skills
+        <p class="l5r5e_skill_title">Trade Skills</p>
         <p>Commerce: <span class="dsf dsf_commerce"></span></p>
         <p>Labor: <span class="dsf dsf_labor"></span></p>
         <p>Seafaring: <span class="dsf dsf_seafaring"></span></p>
@@ -141,7 +150,8 @@
         <span class="dsf dsf_vigilance"></span>
       </p>
       <p>
-        Void Points (Max = ☯️, Start = ☯️/2) = <span class="dsf dsf_current_void"></span> /
+        Void Points (Max = ☯️, Start = ☯️/2) =
+        <span class="dsf dsf_current_void"></span> /
         <span class="dsf dsf_void"></span>
       </p>
     </div>
@@ -173,7 +183,9 @@
       <p>Available Techniques: <span class="dsf dsf_technique_types"></span></p>
     </div>
     <div class="l5r5e_technique_actions">
-      <p>Techniques with Actions: <span class="dsf dsf_technique_actions"></span></p>
+      <p>
+        Techniques with Actions: <span class="dsf dsf_technique_actions"></span>
+      </p>
     </div>
     <div class="l5r5e_techniques">
       <p>Techniques: <span class="dsf dsf_techniques"></span></p>
