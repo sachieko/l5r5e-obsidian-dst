@@ -92,7 +92,8 @@
   background-color: hsla(0, 0%, 0%, 0.4);
   margin-top: 5px;
   margin-bottom: 10px;
-  border: 1px solid hsla(0, 0%, 0%, 0.674);
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  border-radius: 3px;
   padding: 10px;
 }
 
@@ -178,13 +179,17 @@
   flex-flow: column nowrap;
 }
 
-.l5r5e_titles > .dsf_titles {
+.l5r5e_titles > span.dsf_titles {
   border-radius: 3px;
   border: 2px solid hsla(0, 0%, 0%, 0.674);
   background-color: hsla(0, 0%, 0%, 0.4);
   padding-left: 5px;
   padding-right: 5px;
   flex-grow: 1;
+  min-width: 50%;
+  min-height: 38px;
+  position: relative;
+  top: 5px;
 }
 
 .l5r5e_ninjo,
@@ -293,6 +298,7 @@
 }
 
 .l5r5e_author > p > .dsf_dst_author {
+  margin-left: 0.1em;
   color: rgb(181, 213, 249);
   cursor: pointer;
   transition: color 1s ease-in-out;
