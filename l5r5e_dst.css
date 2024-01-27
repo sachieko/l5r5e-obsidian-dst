@@ -1,0 +1,332 @@
+.ds_l5r5e p {
+  display: block;
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+
+.ds_l5r5e .l5r5e_container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+  background-color: rgb(25, 20, 28);
+  border-radius: 3px;
+  font-size: 40px;
+}
+
+.ds_l5r5e .l5r5e_container > * {
+  display: flex;
+  flex-direction: column;
+  color: rgb(214, 214, 214);
+}
+
+.ds_l5r5e .l5r5e_container span.dsf {
+  display: inline-flex;
+  color: rgb(137, 172, 166);
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+}
+
+.ds_l5r5e .l5r5e_container span.dsf:hover {
+  color: rgb(90, 139, 131);
+  transition: color 0.2s ease-in;
+  cursor: pointer;
+}
+
+.l5r5e_container .avatar_image,
+.l5r5e_container span.dsf_avatar_image {
+  display: block;
+  width: 300px;
+  height: 350px;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+}
+
+.l5r5e_container span.dsf_avatar_image:hover {
+  cursor: default;
+}
+
+.l5r5e_avatar {
+  display: flex;
+  width: 300px;
+  height: 350px;
+  align-self: center;
+  background-color: rgba(98, 105, 121, 0.2);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(195, 212, 246, 0.5);
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.l5r5e_container a.dst_character_name_link,
+.l5r5e_container a.dst_player_link,
+.l5r5e_container a.dst_campaign_link {
+  color: rgb(191, 128, 211);
+  transition: color 2s ease-in-out;
+}
+
+.l5r5e_container a.dst_character_name_link:hover,
+.l5r5e_container a.dst_player_link:hover,
+.l5r5e_container a.dst_campaign_link:hover {
+  color: rgb(209, 0, 111);
+  transition: color 2s ease-in-out;
+}
+
+.l5r5e_rings > div {
+  border-radius: 3px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.l5r5e_narrative_top {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.l5r5e_basic_info > div {
+  background-color: hsla(0, 0%, 0%, 0.4);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.l5r5e_rings {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.l5r5e_rings > * {
+  width: 24dvw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.l5r5e_rings > .l5r5e_water,
+.l5r5e_rings > .l5r5e_fire {
+  margin-top: 0.2em;
+}
+
+.l5r5e_earth {
+  color: rgb(182, 162, 155);
+}
+
+.l5r5e_air {
+  color: rgb(166, 230, 235);
+}
+
+.l5r5e_water {
+  color: rgb(166, 173, 232);
+}
+
+.l5r5e_fire {
+  color: rgb(230, 189, 160);
+}
+
+.l5r5e_void {
+  color: rgb(182, 161, 200);
+}
+
+.l5r5e_skills {
+  display: flex;
+  flex-flow: column;
+}
+
+.l5r5e_skills > div {
+  width: 12em;
+}
+
+.l5r5e_skills > div > p:not(:first-child) {
+  min-width: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.l5r5e_society {
+  display: flex;
+  flex-flow: column;
+}
+
+.l5r5e_society_stats {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.l5r5e_society_stats > p {
+  border-radius: 3px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  flex-grow: 1;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.l5r5e_society_box {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.l5r5e_titles > span.dsf_titles {
+  border-radius: 3px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-grow: 1;
+  min-width: 50%;
+  min-height: 38px;
+  position: relative;
+  top: 5px;
+}
+
+.l5r5e_ninjo,
+.l5r5e_giri {
+  min-height: 200px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+}
+
+.l5r5e_ninjo > .dsf_ninjo,
+.l5r5e_giri > .dsf_giri {
+  flex-grow: 1;
+  text-wrap: wrap;
+  border-radius: 3px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  margin-right: 0.5em;
+}
+
+.l5r5e_skills > div > *:not(:first-child),
+.l5r5e_advantages > p,
+.l5r5e_disadvantages > p,
+.l5r5e_personality > p,
+.l5r5e_relationships > p,
+.l5r5e_stances > div,
+.l5r5e_attribute {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding: 5px;
+}
+
+.l5r5e_conditions > p,
+.l5r5e_school_ability > p,
+.l5r5e_weapons > p,
+.l5r5e_armor > p,
+.l5r5e_equipment > p,
+.l5r5e_technique_types > p,
+.l5r5e_technique_actions > p,
+.l5r5e_techniques > p,
+.l5r5e_bio > p,
+.l5r5e_author > p > span {
+  border-radius: 3px;
+  border: 2px solid hsla(0, 0%, 0%, 0.674);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding: 10px;
+}
+
+.l5r5e_stances > div > p {
+  font-size: 28px;
+}
+
+.l5r5e_stances {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.l5r5e_stances > div {
+  margin: 10px;
+}
+
+.l5r5e_rings,
+.l5r5e_artisan,
+.l5r5e_martial,
+.l5r5e_scholar,
+.l5r5e_social,
+.l5r5e_trade,
+.l5r5e_stances,
+.l5r5e_basic_info,
+.l5r5e_society,
+.l5r5e_advantages,
+.l5r5e_disadvantages,
+.l5r5e_personality,
+.l5r5e_relationships,
+.l5r5e_attributes,
+.l5r5e_conditions,
+.l5r5e_school_ability,
+.l5r5e_combat_skills,
+.l5r5e_weapons,
+.l5r5e_armor,
+.l5r5e_equipment,
+.l5r5e_technique_types,
+.l5r5e_technique_actions,
+.l5r5e_techniques,
+.l5r5e_bio,
+.l5r5e_author {
+  background-color: rgba(98, 105, 121, 0.2);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(195, 212, 246, 0.5);
+  border-radius: 3px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.l5r5e_skill_title,
+.l5r5e_section_title,
+.l5r5e_author {
+  color: rgb(189, 173, 248);
+}
+
+.l5r5e_author {
+  font-size: 24px;
+}
+
+.l5r5e_author > p > .dsf_dst_author {
+  margin-left: 0.1em;
+  color: rgb(181, 213, 249);
+  cursor: pointer;
+  transition: color 1s ease-in-out;
+}
+.l5r5e_author > p > .dsf_dst_author:hover {
+  color: rgb(132, 66, 132);
+  text-decoration-line: underline;
+  transition: color 1s ease-in-out;
+}
+
+.l5r5e_container p.l5r5e_attribute_detail {
+  font-size: 22px;
+  margin-top: 4px;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1080px) {
+  .l5r5e_skills {
+    flex-flow: row wrap;
+  }
+
+  .l5r5e_avatar {
+    align-self: flex-start;
+  }
+
+  .l5r5e_society_box {
+    flex-flow: row nowrap;
+  }
+}
