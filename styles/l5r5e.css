@@ -1,47 +1,59 @@
-.l5r5e_container p {
+.ds_l5r5e p {
   display: block;
   margin-block-start: auto;
   margin-block-end: auto;
 }
 
-.l5r5e_container {
+.ds_l5r5e div.l5r5e_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l5r5e_padding,
+.l5r5e_skills > * > * {
+  margin: 15px;
+  padding: 10px;
+}
+
+.ds_l5r5e .l5r5e_container > .l5r5e_section {
   display: flex;
   flex-direction: column;
   background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
   background-color: rgb(25, 20, 28);
   border-radius: 3px;
-  font-size: 40px;
-}
-
-.l5r5e_container > * {
-  display: flex;
-  flex-direction: column;
+  font-size: 1em;
   color: rgb(214, 214, 214);
+  margin-bottom: 0;
+  padding: 10px;
+  width: 100dvw;
 }
 
-.l5r5e_container span.dsf {
+.ds_l5r5e div.l5r5e_container span.dsf {
   display: inline-flex;
   color: rgb(137, 172, 166);
-  margin-left: 0.1em;
-  margin-right: 0.1em;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
-.l5r5e_container span.dsf:hover {
+.ds_l5r5e div.l5r5e_container span.dsf:hover {
   color: rgb(90, 139, 131);
   transition: color 0.2s ease-in;
   cursor: pointer;
 }
 
-.l5r5e_container .avatar_image,
-.l5r5e_container span.dsf_avatar_image {
-  display: block;
-  width: 300px;
-  height: 350px;
+div.l5r5e_container .avatar_image,
+div.l5r5e_container span.dsf_avatar_image {
+  display: flex;
   margin: 0;
   padding: 0;
   border-radius: 3px;
+}
+
+.ds_l5r5e .avatar_image {
+  width: 300px;
 }
 
 .l5r5e_container span.dsf_avatar_image:hover {
@@ -60,18 +72,31 @@
   margin: 10px;
 }
 
-.l5r5e_container a.dst_character_name_link,
 .l5r5e_container a.dst_player_link,
 .l5r5e_container a.dst_campaign_link {
   color: rgb(191, 128, 211);
   transition: color 2s ease-in-out;
 }
 
-.l5r5e_container a.dst_character_name_link:hover,
 .l5r5e_container a.dst_player_link:hover,
 .l5r5e_container a.dst_campaign_link:hover {
   color: rgb(209, 0, 111);
-  transition: color 2s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.l5r5e_container .dsf_name {
+  justify-content: center;
+}
+
+.l5r5e_container a.dst_character_name_link {
+  display: inline-block;
+  color: rgb(147, 128, 171);
+  font-size: 2em;
+  transition: color 1s ease-in-out;
+}
+.l5r5e_container a.dst_character_name_link:hover {
+  color: rgb(209, 0, 111);
+  transition: color 1s ease-in-out;
 }
 
 .l5r5e_rings > div {
@@ -102,18 +127,35 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .l5r5e_rings > * {
-  width: 24dvw;
+  width: 22%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin: 10px 15px;
 }
 
-.l5r5e_rings > .l5r5e_water,
+.l5r5e_rings_title {
+  text-align: center;
+}
+
+.l5r5e_rings > .l5r5e_earth {
+  order: 1;
+}
+.l5r5e_rings > .l5r5e_water {
+  order: 3;
+}
+.l5r5e_rings > .l5r5e_air {
+  order: 2;
+}
 .l5r5e_rings > .l5r5e_fire {
-  margin-top: 0.2em;
+  order: 4;
+}
+.l5r5e_rings > .l5r5e_void {
+  order: 5;
 }
 
 .l5r5e_earth {
@@ -139,6 +181,10 @@
 .l5r5e_skills {
   display: flex;
   flex-flow: column;
+}
+
+.l5r5e_skills > * {
+  margin: 15px;
 }
 
 .l5r5e_skills > div {
@@ -179,6 +225,11 @@
   flex-flow: column nowrap;
 }
 
+.l5r5e_titles {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .l5r5e_titles > span.dsf_titles {
   border-radius: 3px;
   border: 2px solid hsla(0, 0%, 0%, 0.674);
@@ -217,7 +268,8 @@
 .l5r5e_personality > p,
 .l5r5e_relationships > p,
 .l5r5e_stances > div,
-.l5r5e_attribute {
+.l5r5e_attribute,
+.l5r5e_experience_container > p {
   margin-top: 15px;
   margin-bottom: 5px;
   border-radius: 3px;
@@ -243,7 +295,7 @@
 }
 
 .l5r5e_stances > div > p {
-  font-size: 28px;
+  font-size: 0.8em;
 }
 
 .l5r5e_stances {
@@ -256,15 +308,13 @@
   margin: 10px;
 }
 
-.l5r5e_rings,
 .l5r5e_artisan,
 .l5r5e_martial,
 .l5r5e_scholar,
 .l5r5e_social,
 .l5r5e_trade,
 .l5r5e_stances,
-.l5r5e_basic_info,
-.l5r5e_society,
+.l5r5e_narrative_top,
 .l5r5e_advantages,
 .l5r5e_disadvantages,
 .l5r5e_personality,
@@ -280,50 +330,86 @@
 .l5r5e_technique_actions,
 .l5r5e_techniques,
 .l5r5e_bio,
-.l5r5e_author {
+.l5r5e_experience_container {
   background-color: rgba(98, 105, 121, 0.2);
   backdrop-filter: blur(2px);
   border: 1px solid rgba(195, 212, 246, 0.5);
   border-radius: 3px;
-  padding: 15px;
-  margin: 10px;
 }
 
 .l5r5e_skill_title,
 .l5r5e_section_title,
-.l5r5e_author {
+.ds_l5r5e .l5r5e_author,
+.l5r5e_rings_title {
   color: rgb(189, 173, 248);
 }
 
-.l5r5e_author {
-  font-size: 24px;
+.l5r5e_technique_types input {
+  margin: 3px;
 }
 
-.l5r5e_author > p > .dsf_dst_author {
+.ds_l5r5e .l5r5e_author {
+  font-size: 0.8em;
+  flex-direction: row;
+}
+
+.l5r5e_author a.dst_dst_author_link {
   margin-left: 0.1em;
   color: rgb(181, 213, 249);
   cursor: pointer;
   transition: color 1s ease-in-out;
 }
-.l5r5e_author > p > .dsf_dst_author:hover {
-  color: rgb(132, 66, 132);
+.l5r5e_author a.dst_dst_author_link:hover {
+  color: rgb(190, 0, 98);
   text-decoration-line: underline;
   transition: color 1s ease-in-out;
 }
 
 .l5r5e_container p.l5r5e_attribute_detail {
-  font-size: 22px;
+  font-size: 0.6em;
   margin-top: 4px;
   margin-bottom: 1em;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 404px) {
+  .l5r5e_rings > .l5r5e_earth {
+    order: 1;
+    margin-right: 22%;
+  }
+  .l5r5e_rings > .l5r5e_water {
+    order: 3;
+  }
+  .l5r5e_rings > .l5r5e_air {
+    order: 2;
+    margin-left: 10%;
+  }
+  .l5r5e_rings > .l5r5e_fire {
+    order: 5;
+  }
+  .l5r5e_rings > .l5r5e_void {
+    order: 4;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ds_l5r5e .l5r5e_container > .l5r5e_section {
+    width: 99%;
+  }
+
   .l5r5e_skills {
     flex-flow: row wrap;
   }
+}
 
-  .l5r5e_avatar {
-    align-self: flex-start;
+@media screen and (min-width: 1080px) {
+  .l5r5e_ninjo,
+  .l5r5e_giri {
+    max-width: 50%;
+    margin-right: 5px;
+  }
+
+  .l5r5e_giri {
+    margin-left: 0;
   }
 
   .l5r5e_society_box {
