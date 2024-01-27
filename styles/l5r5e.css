@@ -289,7 +289,9 @@
   margin: 10px;
 }
 
-.l5r5e_skill_title, .l5r5e_section_title, .l5r5e_author {
+.l5r5e_skill_title,
+.l5r5e_section_title,
+.l5r5e_author {
   color: rgb(189, 173, 248);
 }
 
@@ -317,10 +319,6 @@
 
 @media screen and (min-width: 1080px) {
   .l5r5e_skills {
-    flex-flow: row wrap;
-  }
-
-  .l5r5e_rings {
     flex-flow: row wrap;
   }
 
